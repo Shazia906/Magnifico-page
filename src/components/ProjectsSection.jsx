@@ -69,8 +69,8 @@ const ProjectsSection = () => {
         </div>
        </div>
 
-    <div className="relative w-full gap-2 mx-auto flex flex-col border p-4 border-neutral-500 rounded-2xl">
-  <div className='flex justify-between items-center text-center gap-3'>
+    <div className="relative w-full text-center gap-2 mx-auto flex flex-col border border-neutral-500 rounded-2xl">
+  <div className='flex justify-between items-center text-center gap-3 px-4 '>
   <div className='flex gap-1'>
             <div className='w-3 h-3 max-sm:w-1.5 max-sm:h-1.5 bg-red-500 rounded-full'></div>
             <div className='w-3 h-3 max-sm:w-1.5 max-sm:h-1.5 bg-yellow-500 rounded-full'></div>
@@ -81,13 +81,13 @@ const ProjectsSection = () => {
         </div>
         <div className='flex gap-2 max-sm:gap-0.5'>
         <button
-        className=" bg-black text-white p-1 max-sm:p-0.5 rounded-full"
+        className="p-1 max-sm:p-0.5 rounded-full"
         onClick={prevSlide}
       >
         <ChevronLeft/>
       </button>
         <button
-        className=" bg-black  text-white p-1 max-sm:p-0.5 rounded-full"
+        className="p-1 max-sm:p-0.5 rounded-full"
         onClick={nextSlide}
       >
         <ChevronRight />
@@ -96,11 +96,11 @@ const ProjectsSection = () => {
         
   </div>
        
-      <div className="overflow-hidden rounded-lg">
-        <video key={videos[currentIndex]} src={videos[currentIndex]} controls className="w-full max-h-[400px] bg-cover rounded-lg"/>
-      </div>
+  <div className="overflow-hidden rounded-lg h-[399px] w-full">
+           <video key={videos[currentIndex]} src={videos[currentIndex]} controls className="w-full h-[100%] bg-cover rounded-lg"/>
+            </div>
       
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center mt-4 p-4">
       {videos.map((_, index) => (
           <button
             key={index}
