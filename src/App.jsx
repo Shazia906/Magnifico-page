@@ -1,6 +1,6 @@
 
 import './index.css';
-import Navbar from './components/nav';
+import Navbar from './components/Nav';
 import ProjectsSection from './components/ProjectsSection';
 import WorkingSection from './components/WorkingSection';
 import ToolsSection from './components/ToolsSection';
